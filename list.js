@@ -1,9 +1,11 @@
-function List() {   this.listSize = 0;   this.pos = 0;   this.dataStore = []; // initializes an empty array to store list elements   this.clear = clear;   this.find = find;
-    
+function List() {   
+
+       this.listSize = 0;
+       this.pos = 0;
+       this.dataStore = []; // initializes an empty array to store list elements   this.clear = clear;   this.find = find;   
        this.toString = toString;
        this.append = append;
        this.remove = remove;
-       this.length = length;
        this.length = length;
         } 
     
@@ -31,17 +33,12 @@ function List() {   this.listSize = 0;   this.pos = 0;   this.dataStore = []; //
                 } 
         return false;
     } 
-    
-    
-    
-    
     // Retrieving the List elements
     
     function toString() { 
         return this.dataStore;
     
     } 
-
     function clear(){
         delete this.dataStore;
         this.dataStore =[];
